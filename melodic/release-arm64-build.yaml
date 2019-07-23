@@ -8,46 +8,398 @@ jenkins_source_job_priority: 65
 jenkins_source_job_timeout: 30
 notifications:
   emails:
-  - ros-buildfarm-melodic@googlegroups.com
-  - clalancette+buildfarm@osrfoundation.org
+  - amazon-b9-ros@amazon.com
   maintainers: true
+package_whitelist:
+  - ackermann_steering_controller
+  - actionlib
+  - actionlib_msgs
+  - actionlib_tutorials
+  - amcl
+  - angles
+  - async_web_server_cpp
+  - audio_capture
+  - audio_common
+  - audio_common_msgs
+  - audio_play
+  - base_local_planner
+  - bond
+  - bond_core
+  - bondcpp
+  - bondpy
+  - camera_calibration
+  - camera_calibration_parsers
+  - camera_info_manager
+  - catkin
+  - chomp_motion_planner
+  - class_loader
+  - clear_costmap_recovery
+  - cmake_modules
+  - collada_parser
+  - collada_urdf
+  - combined_robot_hw
+  - combined_robot_hw_tests
+  - common_msgs
+  - common_tutorials
+  - compressed_depth_image_transport
+  - compressed_image_transport
+  - control_msgs
+  - control_toolbox
+  - controller_interface
+  - controller_manager
+  - controller_manager_msgs
+  - controller_manager_tests
+  - costmap_2d
+  - cpp_common
+  - cv_bridge
+  - depth_image_proc
+  - desktop
+  - desktop_full
+  - diagnostic_aggregator
+  - diagnostic_analysis
+  - diagnostic_common_diagnostics
+  - diagnostic_msgs
+  - diagnostic_updater
+  - diagnostics
+  - diff_drive_controller
+  - dynamic_reconfigure
+  - effort_controllers
+  - eigen_conversions
+  - eigen_stl_containers
+  - executive_smach
+  - filters
+  - force_torque_sensor_controller
+  - forward_command_controller
+  - gazebo_dev
+  - gazebo_msgs
+  - gazebo_plugins
+  - gazebo_ros
+  - gazebo_ros_control
+  - gazebo_ros_pkgs
+  - gencpp
+  - geneus
+  - genlisp
+  - genmsg
+  - gennodejs
+  - genpy
+  - geometric_shapes
+  - geometry
+  - geometry2
+  - geometry_msgs
+  - geometry_tutorials
+  - gl_dependency
+  - grid_map
+  - grid_map_core
+  - grid_map_cv
+  - grid_map_demos
+  - grid_map_filters
+  - grid_map_loader
+  - grid_map_msgs
+  - grid_map_octomap
+  - grid_map_ros
+  - grid_map_rviz_plugin
+  - grid_map_visualization
+  - gripper_action_controller
+  - hardware_interface
+  - hls_lfcd_lds_driver
+  - image_common
+  - image_geometry
+  - image_pipeline
+  - image_proc
+  - image_publisher
+  - image_rotate
+  - image_transport
+  - image_transport_plugins
+  - image_view
+  - imu_sensor_controller
+  - interactive_marker_tutorials
+  - interactive_markers
+  - joint_limits_interface
+  - joint_state_controller
+  - joint_state_publisher
+  - joint_trajectory_controller
+  - kdl_conversions
+  - kdl_parser
+  - laser_assembler
+  - laser_filters
+  - laser_geometry
+  - laser_pipeline
+  - librviz_tutorial
+  - map_msgs
+  - map_server
+  - media_export
+  - message_filters
+  - message_generation
+  - message_runtime
+  - mk
+  - move_base
+  - move_base_msgs
+  - moveit_core
+  - moveit_experimental
+  - moveit_kinematics
+  - moveit_msgs
+  - moveit_resources
+  - moveit_ros_benchmarks
+  - moveit_ros_manipulation
+  - moveit_ros_move_group
+  - moveit_ros_perception
+  - moveit_ros_planning
+  - moveit_ros_planning_interface
+  - moveit_ros_robot_interaction
+  - moveit_ros_visualization
+  - moveit_ros_warehouse
+  - nav_core
+  - nav_msgs
+  - navfn
+  - nodelet
+  - nodelet_core
+  - nodelet_topic_tools
+  - nodelet_tutorial_math
+  - object_recognition_msgs
+  - octomap
+  - octomap_msgs
+  - octovis
+  - opencv3
+  - orocos_kdl
+  - pcl_conversions
+  - pcl_msgs
+  - pcl_ros
+  - perception
+  - perception_pcl
+  - pluginlib
+  - pluginlib_tutorials
+  - polled_camera
+  - position_controllers
+  - python_orocos_kdl
+  - python_qt_binding
+  - qt_dotgraph
+  - qt_gui
+  - qt_gui_cpp
+  - qt_gui_py_common
+  - qwt_dependency
+  - random_numbers
+  - realtime_tools
+  - resource_retriever
+  - robot
+  - robot_model
+  - robot_state_publisher
+  - ros
+  - ros_base
+  - ros_comm
+  - ros_control
+  - ros_controllers
+  - ros_core
+  - ros_environment
+  - ros_tutorials
+  - rosapi
+  - rosauth
+  - rosbag
+  - rosbag_migration_rule
+  - rosbag_storage
+  - rosbash
+  - rosboost_cfg
+  - rosbridge_library
+  - rosbridge_msgs
+  - rosbridge_server
+  - rosbuild
+  - rosclean
+  - rosconsole
+  - rosconsole_bridge
+  - roscpp
+  - roscpp_core
+  - roscpp_serialization
+  - roscpp_traits
+  - roscpp_tutorials
+  - roscreate
+  - rosgraph
+  - rosgraph_msgs
+  - roslang
+  - roslaunch
+  - roslib
+  - roslint
+  - roslisp
+  - roslz4
+  - rosmake
+  - rosmaster
+  - rosmsg
+  - rosnode
+  - rosout
+  - rospack
+  - rosparam
+  - rospy
+  - rospy_tutorials
+  - rosserial_msgs
+  - rosserial_python
+  - rosservice
+  - rostest
+  - rostime
+  - rostopic
+  - rosunit
+  - roswtf
+  - roswww
+  - rotate_recovery
+  - rqt_action
+  - rqt_bag
+  - rqt_bag_plugins
+  - rqt_common_plugins
+  - rqt_console
+  - rqt_dep
+  - rqt_graph
+  - rqt_gui
+  - rqt_gui_cpp
+  - rqt_gui_py
+  - rqt_image_view
+  - rqt_joint_trajectory_controller
+  - rqt_launch
+  - rqt_logger_level
+  - rqt_moveit
+  - rqt_msg
+  - rqt_nav_view
+  - rqt_plot
+  - rqt_pose_view
+  - rqt_publisher
+  - rqt_py_common
+  - rqt_py_console
+  - rqt_reconfigure
+  - rqt_robot_dashboard
+  - rqt_robot_monitor
+  - rqt_robot_plugins
+  - rqt_robot_steering
+  - rqt_runtime_monitor
+  - rqt_rviz
+  - rqt_service_caller
+  - rqt_shell
+  - rqt_srv
+  - rqt_tf_tree
+  - rqt_top
+  - rqt_topic
+  - rqt_web
+  - rviz
+  - rviz_plugin_tutorials
+  - rviz_python_tutorial
+  - self_test
+  - sensor_msgs
+  - shape_msgs
+  - simulators
+  - smach
+  - smach_msgs
+  - smach_ros
+  - smclib
+  - sound_play
+  - srdfdom
+  - stage
+  - stage_ros
+  - std_msgs
+  - std_srvs
+  - stereo_image_proc
+  - stereo_msgs
+  - tf
+  - tf2
+  - tf2_bullet
+  - tf2_eigen
+  - tf2_geometry_msgs
+  - tf2_kdl
+  - tf2_msgs
+  - tf2_py
+  - tf2_sensor_msgs
+  - tf2_ros
+  - tf2_tools
+  - tf_conversions
+  - theora_image_transport
+  - topic_tools
+  - trajectory_msgs
+  - transmission_interface
+  - turtle_actionlib
+  - turtle_tf
+  - turtle_tf2
+  - turtlebot3
+  - turtlebot3_bringup
+  - turtlebot3_description
+  - turtlebot3_example
+  - turtlebot3_fake
+  - turtlebot3_gazebo
+  - turtlebot3_msgs
+  - turtlebot3_navigation
+  - turtlebot3_simulations
+  - turtlebot3_slam
+  - turtlebot3_teleop
+  - turtlesim
+  - urdf
+  - urdf_parser_plugin
+  - urdf_tutorial
+  - urdfdom_py
+  - velocity_controllers
+  - vision_opencv
+  - visualization_marker_tutorials
+  - visualization_msgs
+  - visualization_tutorials
+  - viz
+  - voxel_grid
+  - warehouse_ros
+  - web_video_server
+  - webkit_dependency
+  - xacro
+  - xmlrpcpp
 package_blacklist:
 - fetch_drivers
 - leap_motion
 sync:
-  package_count: 1000
+  package_count: 300
 repositories:
   keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
-    Version: GnuPG v1
 
-    mQINBFzvJpYBEADY8l1YvO7iYW5gUESyzsTGnMvVUmlV3XarBaJz9bGRmgPXh7jc
-    VFrQhE0L/HV7LOfoLI9H2GWYyHBqN5ERBlcA8XxG3ZvX7t9nAZPQT2Xxe3GT3tro
-    u5oCR+SyHN9xPnUwDuqUSvJ2eqMYb9B/Hph3OmtjG30jSNq9kOF5bBTk1hOTGPH4
-    K/AY0jzT6OpHfXU6ytlFsI47ZKsnTUhipGsKucQ1CXlyirndZ3V3k70YaooZ55rG
-    aIoAWlx2H0J7sAHmqS29N9jV9mo135d+d+TdLBXI0PXtiHzE9IPaX+ctdSUrPnp+
-    TwR99lxglpIG6hLuvOMAaxiqFBB/Jf3XJ8OBakfS6nHrWH2WqQxRbiITl0irkQoz
-    pwNEF2Bv0+Jvs1UFEdVGz5a8xexQHst/RmKrtHLct3iOCvBNqoAQRbvWvBhPjO/p
-    V5cYeUljZ5wpHyFkaEViClaVWqa6PIsyLqmyjsruPCWlURLsQoQxABcL8bwxX7UT
-    hM6CtH6tGlYZ85RIzRifIm2oudzV5l+8oRgFr9yVcwyOFT6JCioqkwldW52P1pk/
-    /SnuexC6LYqqDuHUs5NnokzzpfS6QaWfTY5P5tz4KHJfsjDIktly3mKVfY0fSPVV
-    okdGpcUzvz2hq1fqjxB6MlB/1vtk0bImfcsoxBmF7H+4E9ZN1sX/tSb0KQARAQAB
-    tCZPcGVuIFJvYm90aWNzIDxpbmZvQG9zcmZvdW5kYXRpb24ub3JnPokCVAQTAQoA
-    PhYhBMHPbjHmut6IaLFytPQu1vurF8ZUBQJc7yaWAhsDBQkDwmcABQsJCAcCBhUK
-    CQgLAgQWAgMBAh4BAheAAAoJEPQu1vurF8ZUkhIP/RbZY1ErvCEUy8iLJm9aSpLQ
-    nDZl5xILOxyZlzpg+Ml5bb0EkQDr92foCgcvLeANKARNCaGLyNIWkuyDovPV0xZJ
-    rEy0kgBrDNb3++NmdI/+GA92pkedMXXioQvqdsxUagXAIB/sNGByJEhs37F05AnF
-    vZbjUhceq3xTlvAMcrBWrgB4NwBivZY6IgLvl/CRQpVYwANShIQdbvHvZSxRonWh
-    NXr6v/Wcf8rsp7g2VqJ2N2AcWT84aa9BLQ3Oe/SgrNx4QEhA1y7rc3oaqPVu5ZXO
-    K+4O14JrpbEZ3Xs9YEjrcOuEDEpYktA8qqUDTdFyZrxb9S6BquUKrA6jZgT913kj
-    J4e7YAZobC4rH0w4u0PrqDgYOkXA9Mo7L601/7ZaDJob80UcK+Z12ZSw73IgBix6
-    DiJVfXuWkk5PM2zsFn6UOQXUNlZlDAOj5NC01V0fJ8P0v6GO9YOSSQx0j5UtkUbR
-    fp/4W7uCPFvwAatWEHJhlM3sQNiMNStJFegr56xQu1a/cbJH7GdbseMhG/f0BaKQ
-    qXCI3ffB5y5AOLc9Hw7PYiTFQsuY1ePRhE+J9mejgWRZxkjAH/FlAubqXkDgterC
-    h+sLkzGf+my2IbsMCuc+3aeNMJ5Ej/vlXefCH/MpPWAHCqpQhe2DET/jRSaM53US
-    AHNx8kw4MPUkxExgI7Sd
-    =4Ofr
+    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
+    ppUgdY8/1PyR3c0+LpLIZsRsBK15gredb/Vb
+    =lcw/
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
   - http://repositories.ros.org/ubuntu/building
