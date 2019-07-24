@@ -1,0 +1,84 @@
+%YAML 1.1
+# ROS buildfarm release-build file
+---
+abi_incompatibility_assumed: true
+
+build_environment_variables:
+  RTI_NC_LICENSE_ACCEPTED: 'yes'
+
+jenkins_binary_job_priority: 80
+jenkins_binary_job_timeout: 120
+jenkins_source_job_priority: 76
+jenkins_source_job_timeout: 30
+notifications:
+  emails:
+  - amazon-b9-ros@amazon.com
+  maintainers: true
+sync:
+  package_count: 180
+repositories:
+  keys:
+  - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    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
+    ppUgdY8/1PyR3c0+LpLIZsRsBK15gredb/Vb
+    =lcw/
+    -----END PGP PUBLIC KEY BLOCK-----
+  urls:
+  - http://54.70.178.199/ubuntu/building
+target_repository: http://54.70.178.199/ubuntu/building
+targets:
+  ubuntu:
+    bionic:
+      amd64:
+type: release-build
+upload_credential_id: 1e7d4696-7fd4-4bc6-8c87-ebc7b6ce16e5
+version: 2
