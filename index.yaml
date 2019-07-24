@@ -21,7 +21,7 @@ distributions:
     - amazon-b9-ros@amazon.com
     release_builds:
       default: dashing/release-build.yaml
-      ubv8: dashing/release-arm64-build.yaml
+      ubv8: dashing/release-bionic-arm64-build.yaml
 jenkins_url: http://34.213.183.175
 notification_emails:
 - amazon-b9-ros@amazon.com
