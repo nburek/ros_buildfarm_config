@@ -73,8 +73,8 @@ repositories:
     =lcw/
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://54.70.178.199/ubuntu/building
-target_repository: http://54.70.178.199/ubuntu/building
+  - http://repo/ubuntu/building
+target_repository: http://repo/ubuntu/building
 targets:
   ubuntu:
     bionic:

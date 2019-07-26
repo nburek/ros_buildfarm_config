@@ -22,12 +22,12 @@ distributions:
     release_builds:
       default: dashing/release-build.yaml
       ubv8: dashing/release-bionic-arm64-build.yaml
-jenkins_url: http://34.213.183.175
+jenkins_url: http://localhost:8080
 notification_emails:
 - amazon-b9-ros@amazon.com
 prerequisites:
   debian_repositories:
-  - http://54.70.178.199/ubuntu/building
+  - http://repo/ubuntu/building
   debian_repository_keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -86,8 +86,8 @@ prerequisites:
 rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
 status_page_repositories:
   default:
-  - http://54.70.178.199/ubuntu/building
-  - http://54.70.178.199/ubuntu/testing
-  - http://54.70.178.199/ubuntu/main
+  - http://repo/ubuntu/building
+  - http://repo/ubuntu/testing
+  - http://repo/ubuntu/main
 type: buildfarm
 version: 1
