@@ -27,7 +27,7 @@ notification_emails:
 - amazon-b9-ros@amazon.com
 prerequisites:
   debian_repositories:
-  - http://54.70.178.199/ubuntu/building
+  - http://52.10.12.53/ubuntu/building
   debian_repository_keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -86,8 +86,8 @@ prerequisites:
 rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
 status_page_repositories:
   default:
-  - http://54.70.178.199/ubuntu/building
-  - http://54.70.178.199/ubuntu/testing
-  - http://54.70.178.199/ubuntu/main
+  - http://52.10.12.53/ubuntu/building
+  - http://52.10.12.53/ubuntu/testing
+  - http://52.10.12.53/ubuntu/main
 type: buildfarm
 version: 1
