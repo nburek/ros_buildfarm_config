@@ -358,7 +358,7 @@ package_whitelist:
   - webkit_dependency
   - xacro
   - xmlrpcpp
-  package_blacklist:
+package_blacklist:
   - ardrone_autonomy
   - avt_vimba_camera
   - hrpsys
