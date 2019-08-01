@@ -22,6 +22,8 @@ package_whitelist:
   - audio_common
   - audio_common_msgs
   - audio_play
+  - aws_common
+  - aws_ros1_common
   - base_local_planner
   - bond
   - bond_core
@@ -34,6 +36,10 @@ package_whitelist:
   - chomp_motion_planner
   - class_loader
   - clear_costmap_recovery
+  - cloudwatch_logger
+  - cloudwatch_logs_common
+  - cloudwatch_metrics_collector
+  - cloudwatch_metrics_common
   - cmake_modules
   - collada_parser
   - collada_urdf
@@ -52,6 +58,7 @@ package_whitelist:
   - costmap_2d
   - cpp_common
   - cv_bridge
+  - dataflow_lite
   - depth_image_proc
   - desktop
   - desktop_full
@@ -67,6 +74,7 @@ package_whitelist:
   - eigen_conversions
   - eigen_stl_containers
   - executive_smach
+  - file_management
   - filters
   - force_torque_sensor_controller
   - forward_command_controller
@@ -100,7 +108,10 @@ package_whitelist:
   - grid_map_rviz_plugin
   - grid_map_visualization
   - gripper_action_controller
+  - h264_encoder_core
+  - h264_video_encoder
   - hardware_interface
+  - health_metric_collector
   - hls_lfcd_lds_driver
   - image_common
   - image_geometry
@@ -120,10 +131,15 @@ package_whitelist:
   - joint_trajectory_controller
   - kdl_conversions
   - kdl_parser
+  - kinesis_manager
+  - kinesis_video_msgs
+  - kinesis_video_streamer
   - laser_assembler
   - laser_filters
   - laser_geometry
   - laser_pipeline
+  - lex_common_msgs
+  - lex_node
   - librviz_tutorial
   - map_msgs
   - map_server
@@ -190,6 +206,7 @@ package_whitelist:
   - ros_controllers
   - ros_core
   - ros_environment
+  - ros_monitoring_msgs
   - ros_tutorials
   - rosapi
   - rosauth
@@ -301,14 +318,15 @@ package_whitelist:
   - tf2_kdl
   - tf2_msgs
   - tf2_py
-  - tf2_sensor_msgs
   - tf2_ros
+  - tf2_sensor_msgs
   - tf2_tools
   - tf_conversions
   - theora_image_transport
   - topic_tools
   - trajectory_msgs
   - transmission_interface
+  - tts
   - turtle_actionlib
   - turtle_tf
   - turtle_tf2
